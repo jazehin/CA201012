@@ -37,9 +37,11 @@ namespace CA201012
             {
                 for (int j = 0; j < 10; j++)
                 {
-                    if ((i * 10 + j) % 7 == 0) Console.ForegroundColor = ConsoleColor.Green;
-                    else Console.ResetColor();
+                    if ((i * 10 + j + 1) % 7 == 0) Console.ForegroundColor = ConsoleColor.Green;
+                    
                     Console.Write($"{tomb[i*10+j]} ");
+
+                    Console.ResetColor();
                 }
                 Console.WriteLine();
             }
